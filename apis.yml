@@ -1,23 +1,77 @@
 aid: articul8-ai
+
 name: Articul8 AI
-description: 'Articul8 AI is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://assets.articul8.ai/Techstack_Aug_2125_1_191cc1f8d9.png
+
+description: 'Articul8 AI is a GenAI platform focused on enterprise applications, providing domain‑specific models and autonomous agent capabilities. Founded by researchers with deep experience in cloud infrastructure and aerospace manufacturing, the company aims to simplify GenAI deployment for complex, mission‑critical environments. It offers products such as A8 SupplyChain and a suite of tools for data integration, observability, and personalized AI outcomes, targeting large enterprises seeking scalable, trustworthy AI solutions.'
+
 url: https://raw.githubusercontent.com/api-evangelist/articul8-ai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- GenAI
+- Enterprise
+- Platform
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/articul8-ai-vendors.yml
+- type: Hosts
+  url: hosts/articul8-ai-hosts.yml
+- type: StatusPage
+  url: https://status.articul8.ai/
+- type: SignUp
+  url: https://auth.articul8.ai/signup?redirect_uri=https%3A%2F%2Fapi-docs.articul8.ai%2Fparseauth&response_type=code&client_id=6deln67aomph0q5e3j460jg8e&state=eyJub25jZSI6IjE3OTA0MTAwMTlUblhnc0JQVk8uYzF0bHFaNSIsInJlcXVlc3RlZFVyaSI6Ii8ifQ&scope=phone%20email%20profile%20openid%20aws.cognito.signin.user.admin&code_challenge_method=S256&code_challenge=aVAru5abKiHSvaQguxfsBxjYW2VzIy6Th3TwmcHufJc
+- type: Newsroom
+  url: https://articul8.ai/news
+- type: DomainSecurity
+  url: security/articul8-ai-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/articul8-ai_stock/
+  url: https://articul8.ai
+
+- type: Documentation
+  url: https://articul8.ai/about
+- type: Blog
+  url: https://articul8.ai/blog
+- type: About
+  url: https://articul8.ai/about
+- type: PrivacyPolicy
+  url: https://articul8.ai/privacy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Provider's documentation pages are HTML rendered without a machine‑readable OpenAPI spec.
+  evidence:
+    - url: https://articul8.ai/about
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
